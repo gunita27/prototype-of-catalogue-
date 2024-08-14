@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Grid</title>
+    <link rel="stylesheet" >
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #efaaaa;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #9cf18f;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card" onclick="openCard('cards.html')">Card 1</div>
+        <div class="card" onclick="openCard('cards.html')">Card 2</div>
+        <div class="card" onclick="openCard('cards.html')">Card 3</div>
+        <div class="card" onclick="openCard('cards.html')">Card 4</div>
+        <div class="card" onclick="openCard('cards.html')">Card 5</div>
+        <div class="card" onclick="openCard('cards.html')">Card 6</div>
+        <div class="card" onclick="openCard('cards.html')">Card 7</div>
+        <div class="card" onclick="openCard('cards.html')">Card 8</div>
+        <div class="card" onclick="openCard('cards.html')">Card 9</div>
+        <div class="card" onclick="openCard('cards.html')">Card 10</div>
+        <div class="card" onclick="openCard('cards.html')">Card 11</div>
+        <div class="card" onclick="openCard('cards.html')">Card 12</div>
+    </div>
+
+    <script>
+        function openCard(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
